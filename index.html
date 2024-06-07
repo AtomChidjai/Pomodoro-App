@@ -1,17 +1,19 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Pomodoro App</title>
 </head>
+
 <body>
     <div class="box-container">
         <div class="box">
             <h1>🍅 Pomodoro Timer 🍅</h1>
-            <hr/>
             <div class="inner-box-container">
+                <h1 style="margin-right: 50px;">Study : </h1><br />
                 <div class="inner-box">
                     <p id="countdown-timer">
                         25 : 00
@@ -31,6 +33,31 @@
             </div>
         </div>
     </div>
-    <script src="script.js"></script>
+    <div class="box2-container">
+        <div class="box2">
+            <h1>🥒 Pomodoro Timer 🥒</h1>
+            <div class="inner-box-container">
+                <h1 style="margin-right: 50px;">Break : </h1><br />
+                <div class="inner-box">
+                    <p id="countdown-timer2">
+                        5 : 00
+                    </p>
+                </div>
+            </div>
+            <div class="button-container">
+                <button onclick="StartTimer2()" id="start-button2" style="background-color: rgb(53, 228, 53);">
+                    Start
+                </button>
+                <button onclick="PauseTimer2()" style="background-color: rgb(206, 199, 0);">
+                    Pause
+                </button>
+                <button onclick="ResetTimer2()" style="background-color: rgb(250, 71, 71);">
+                    Reset
+                </button>
+            </div>
+        </div>
+    </div>
+        <script src="script.js"></script>
 </body>
+
 </html>
