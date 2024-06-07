@@ -13,18 +13,20 @@
             <hr/>
             <div class="inner-box-container">
                 <div class="inner-box">
-                    <p>25 : 00</p>
+                    <p id="countdown-timer">
+                        25 : 00
+                    </p>
                 </div>
             </div>
             <div class="button-container">
-                <button style="background-color: rgb(53, 228, 53);">
+                <button onclick="StartTimer()" id="start-button" style="background-color: rgb(53, 228, 53);">
                     Start
                 </button>
-                <button style="background-color: rgb(206, 199, 0);">
+                <button onclick="PauseTimer()" style="background-color: rgb(206, 199, 0);">
                     Pause
                 </button>
-                <button style="background-color: rgb(250, 71, 71);">
-                    Stop
+                <button onclick="ResetTimer()" style="background-color: rgb(250, 71, 71);">
+                    Reset
                 </button>
             </div>
         </div>
